@@ -8,12 +8,12 @@ var specialCharactersArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", 
 // Password components
 function passwordComponents() {
   
-  var passwordLength = parseInt(prompt('How long would you like your password to be? Choose a number between 8 - 80.'));
-    if (passwordLength < 8 || passwordLength > 80 ) {
-      alert('Error: Your selected password length must be between 8 and 80.');
+  var passwordLength = parseInt(prompt('How long would you like your password to be? Choose a number between 8 - 128.'));
+    if (passwordLength < 8 || passwordLength > 128 ) {
+      alert('Error: Your selected password length must be between 8 and 128.');
     return null
     } else if(Number.isNaN(passwordLength)){
-      alert('Error: This must be a numerical number.');
+      alert('Error: This must be a numerical digit.');
       return null
     }
 
